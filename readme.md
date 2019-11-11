@@ -60,7 +60,7 @@ C 语言程序中的函数都由函数名和函数体两部分构成，
 第四行 `printf(“Programming is interesting! \n”);`
 使用了输出函数 `printf()`，它的功能是输出（即显示）“Programming is interesting!”。
 其中 `\n` 是换行符，`;` 是语句结束符。
-程序运行之后，可在计算机屏幕上显示：“Programming is interesting!”，
+程序运行之后，可在计算机命令行上显示：“Programming is interesting!”，
 并将光标移至下一行的开始处（即换行）。
 
 最后看第一行 `#include <stdio.h>`，
@@ -72,3 +72,20 @@ C 语言程序中的函数都由函数名和函数体两部分构成，
 若程序需要输出（使用 `printf()` 函数）时，
 在程序开始处写上 `#include <stdio.h>` 即可。
 
+### 4. 标识符与关键字:
+
+标识符是数字、下划线、小写及大写拉丁字母和以 `\u` 及 `\U`
+转义记号指定的 Unicode 字符 (C99 起) 的任意长度序列。
+合法的标识符必须以非数字字符（拉丁字母、下划线或 Unicode 非数字字符 (C99 起)）开始。
+标识符大小写有别（小写和大写字母不同）。
+
+下面是是 C 中保留的关键词。因为语言使用这些关键字，故不可重定义它们（不可与它们重名）。
+
+* 数据类型关键字：
+char, double, enum, float, int, long, short, signed, struct, union, unsigned, void.
+* 控制语句关键字：
+break, case, continue, default, do, else, for, goto, if, return, switch, while.
+* 储存类型关键字：
+auto, extern, register, static.
+* 其他类型关键字：
+const, sizeof, typedef, volatile.
